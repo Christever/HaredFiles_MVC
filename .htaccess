@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+
+# Active le module d'écriture
+RewriteEngine on
+
+# RewriteRule [^URL VOULUE$] [URL OROGONALE]
+RewriteRule ^([a-z0-9]+)$ index.php?page=$1 [L]
